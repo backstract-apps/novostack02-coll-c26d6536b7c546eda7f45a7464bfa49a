@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: novostack02-coll-c26d6536b7c546eda7f45a7464bfa49a-srv
+spec:
+  selector:
+    app: novostack02-coll-c26d6536b7c546eda7f45a7464bfa49a
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9027
+  type: ClusterIP
